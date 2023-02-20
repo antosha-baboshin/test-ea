@@ -118,6 +118,19 @@ html {
   color: #FFFFFF;
 }
 
+.main__date-name_days::before {
+  content: 'Days';
+}
+.main__date-name_hours::before {
+  content: 'Hours';
+}
+.main__date-name_minutes::before {
+  content: 'Minutes';
+}
+.main__date-name_seconds::before {
+  content: 'Seconds';
+}
+
 .main__button-block {
   display: flex;
   flex-direction: column;
@@ -242,6 +255,18 @@ html {
   }
   .main__date-name {
     font-size: 12px;
+  }
+  .main__date-name_days::before {
+    content: 'DD';
+  }
+  .main__date-name_hours::before {
+    content: 'HH';
+  }
+  .main__date-name_minutes::before {
+    content: 'MM';
+  }
+  .main__date-name_seconds::before {
+    content: 'SS';
   }
   .main__timer {
     margin-top: 40px;
