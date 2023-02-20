@@ -22,6 +22,20 @@ h1, p {
   padding-top: 60px;
 }
 
+.main__left-spot {
+  position: absolute;
+  width: 450px;
+  height: 400px;
+  left: 0px;
+  top: 0px;
+  background-image: url(./assets/images/left-spot.svg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.main__right-spot {
+
+}
 .main__content-block {
   display: flex;
   flex-direction: column;
@@ -115,7 +129,6 @@ h1, p {
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
@@ -145,7 +158,7 @@ h1, p {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 1);
 
   padding-left: 27px;
   border: 0px;
@@ -160,4 +173,12 @@ h1, p {
   background-repeat: no-repeat;
   border-radius: 100%;
   margin: 8px;
+}
+
+.footer__input:focus {
+  outline: 0;
+}
+
+.footer__input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
