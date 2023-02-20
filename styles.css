@@ -277,3 +277,38 @@ html {
     background-size: 15px;
   }
 }
+@media (max-width: 480px) {
+  .main__left-spot {
+    top: -10px;
+    left: -10px;
+    width: 170px;
+    height: 150px;
+  }
+  
+  .main__right-spot {
+    width: 150px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__logo {
+    padding-top: 80px;
+    width: 128px;
+  }
+  .main__content-block {
+    margin-top: 66px;
+  }
+  .main__timer {
+    gap: 4px;
+  }
+  .main__timer-block {
+    gap: 6px;
+  }
+  .footer {
+    height: 141px;
+  }
+  .footer__frame {
+    width: 280px;
+  }
+}
