@@ -28,7 +28,9 @@ html {
 
   font-family: 'Poppins';
   font-style: normal;
-  overflow-x: hidden;
+  overflow: hidden;
+  top: 0;
+  transition: 3s;
 }
 
 .header__logo {
@@ -310,6 +312,14 @@ html {
   background-image: url(./assets/images/arrow-down.svg);
 }
 
+.undersection {
+  position: absolute;
+  bottom: -100vh;
+  height: 100vh;
+  width: 100%;
+  background: #DF2224;
+}
+
 @media (max-width: 1440px) {
   .main__left-spot {
     width: 230px;
@@ -336,6 +346,16 @@ html {
 @media (max-width: 768px) {
   .header__logo {
     padding-top: 100px;
+  }
+  @keyframes showOpacity {
+    from {
+      padding-top: 40px;
+      opacity: 0;
+    }
+    to {
+      padding-top: 100px;
+      opacity: 1;
+    }
   }
   .main__content-block {
     margin-top: 166px;
