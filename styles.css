@@ -10,7 +10,6 @@ h1, p {
 input {
   all: unset;
 }
-
 :root {
   --main-text-color: #162C4E;
 }
@@ -29,8 +28,8 @@ html {
   font-family: 'Poppins';
   font-style: normal;
   overflow: hidden;
-  top: 0;
-  transition: 3s;
+  top: -100vh;
+  transition: 2s;
 }
 
 .header__logo {
@@ -314,10 +313,62 @@ html {
 
 .undersection {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
   bottom: -100vh;
   height: 100vh;
   width: 100%;
-  background: #DF2224;
+  background: #FFFFFF;
+}
+.undersection__slider-wrapper {
+  width: 1705px;
+  margin: 0 auto;
+  background-color: #162C4E;
+}
+.undersection__slider-wrapper li{
+  height: 682px;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+}
+.undersection__slider {
+  display: flex;
+  gap: 4px;
+}
+._slide0 {
+  background-color: aqua;
+  width: 1082px;
+}
+._slide1 {
+  background-color: black;
+  width: 85px;
+}
+._slide2 {
+  background-color: blue;
+  width: 85px;
+}
+._slide3 {
+  background-color: yellow;
+  width: 85px;
+}
+._slide4 {
+  background-color: green;
+  width: 85px;
+}
+._slide5 {
+  background-color: red;
+  width: 85px;
+}
+._slide6 {
+  background-color: purple;
+  width: 85px;
+}
+._slide7 {
+  background-color: brown;
+  width: 85px;
 }
 
 @media (max-width: 1440px) {
