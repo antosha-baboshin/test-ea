@@ -4,7 +4,7 @@ const startTimer = () => {
   const MINUTES = document.querySelector('.main__time_minutes');
   const SECONDS = document.querySelector('.main__time_seconds');
 
-  const DEADLINE = new Date(2023, 5, 31);
+  const DEADLINE = new Date('2023-05-31 00:00:00');
 
   const countdown = () => {
     const CURRENT_TIME = DEADLINE - new Date();

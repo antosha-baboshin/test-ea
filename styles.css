@@ -184,6 +184,9 @@ html {
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
   border-radius: 40px;
 }
+.footer__frame._invalid {
+  background: #ffc7c9;
+}
 .footer__input {
   width: 85%;  
   border-radius: 40px;
@@ -198,6 +201,9 @@ html {
   padding-left: 27px;
   border: 0px;
 }
+.footer__input._invalid {
+  background: #ffc7c9;
+}
 
 .footer__button {
   width: 43px;
@@ -208,6 +214,7 @@ html {
   background-repeat: no-repeat;
   border-radius: 100%;
   margin: 8px;
+  cursor: pointer;
 }
 
 .footer__input:focus {
