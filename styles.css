@@ -290,6 +290,26 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.footer__page-block {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 10px;
+  right: 111px;
+  cursor: pointer;
+}
+.footer__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.footer__page-block-arrow {
+  width: 24px;
+  height: 24px;
+  background-image: url(./assets/images/arrow-down.svg);
+}
+
 @media (max-width: 1440px) {
   .main__left-spot {
     width: 230px;
@@ -299,6 +319,17 @@ html {
   .main__right-spot {
     width: 250px;
     height: 220px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer__page-block {
+    position: static;
+    gap: 3px;
+  }
+  .footer__text {
+    font-size: 16px;
   }
 }
 
