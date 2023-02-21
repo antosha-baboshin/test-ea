@@ -24,9 +24,18 @@ const validateForm = () => {
     return response.json();
   };
 
-  const blackout = () => {
-    
-  }
+  const BLACKOUT = document.querySelector('.header__blackout');
+  const removeBlackout = () => {
+    BLACKOUT.style.display = 'none';
+  };
+  const addBlackout = () => {
+    const CLOSE_ICON = document.querySelector('.header__info-cross');
+    const CLOSE_BUTTON = document.querySelector('.header__info-button');
+    BLACKOUT.style.display = 'flex';
+    CLOSE_ICON.addEventListener('click', removeBlackout);
+    CLOSE_BUTTON.addEventListener('click', removeBlackout);
+  };
+
   const sendForm = async () => {
     const ERROR = checkEmail();
     const EMAIL = FORM_INPUT.value;
@@ -39,7 +48,7 @@ const validateForm = () => {
       FORM_INPUT.classList.remove('_invalid');
 
       postData(URL, { email: EMAIL }).then(() => {
-        blackout();
+        addBlackout();
       }).catch('Error');
     }
   };
