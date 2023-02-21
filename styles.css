@@ -17,6 +17,7 @@ html {
 }
 
 .body {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,4 +344,65 @@ html {
   .footer__frame {
     width: 280px;
   }
+}
+.header__blackout {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(22, 44, 78, 0.6);
+  border: 1px solid red;
+}
+
+.header__info-block {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+  width: 320px;
+  height: 370px;
+  padding-top: 97px;
+  background: #FFFFFF;
+  border: 1px solid rgba(19, 89, 120, 0.07);
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.header__info-cross {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 8px;
+  right: 0px;
+  border-radius: 2px;
+  background-image: url(./assets/icons/cancel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.header__info-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 104%;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+._info-text {
+  text-align: center;
+  font-size: 16px;
+}
+.header__info-button {
+  background: #1D4169;
+  border-radius: 40px;
+  width: 200px;
+  height: 60px;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 150%;
+  cursor: pointer;
 }

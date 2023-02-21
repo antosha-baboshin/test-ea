@@ -24,6 +24,9 @@ const validateForm = () => {
     return response.json();
   };
 
+  const blackout = () => {
+    
+  }
   const sendForm = async () => {
     const ERROR = checkEmail();
     const EMAIL = FORM_INPUT.value;
@@ -35,7 +38,9 @@ const validateForm = () => {
       FORM.classList.remove('_invalid');
       FORM_INPUT.classList.remove('_invalid');
 
-      postData(URL, { email: EMAIL }).then((data) => console.log(data)).catch('Error');
+      postData(URL, { email: EMAIL }).then(() => {
+        blackout();
+      }).catch('Error');
     }
   };
 
