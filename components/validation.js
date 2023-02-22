@@ -49,7 +49,8 @@ const validateForm = () => {
 
       postData(URL, { email: EMAIL }).then(() => {
         addBlackout();
-      }).catch('Error');
+        FORM_INPUT.value = '';
+      }).catch(alert('Ошибка: подписка не оформлена'));
     }
   };
 
