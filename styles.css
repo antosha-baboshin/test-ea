@@ -798,3 +798,27 @@ margin: 40px 0 20px 0;
   line-height: 150%;
   cursor: pointer;
 }
+.main__button:hover, .footer__button:hover {
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  animation: pulse 1s;
+  border: 3px solid #DF2224;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--main-text-color);
+  }
+}
+
+.undersection__slide-button:hover {
+  box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  animation: pulse_slide-button 1s;
+  border: 3px solid #DF2224;
+}
+
+@keyframes pulse_slide-button {
+  0% {
+    box-shadow: 0 0 0 0 #FFFFFF;
+  }
+}
