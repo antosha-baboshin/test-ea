@@ -334,17 +334,15 @@ html {
   gap: 40px;
   bottom: -100vh;
   height: 100vh;
-  width: 100%;
-  padding-top: 50px;
   background: #FFFFFF;
 }
 .undersection__slider-wrapper {
-  width: 1705px;
+  width: 80%;
   margin: 0 auto;
   background-color: #162C4E;
 }
 .undersection__slider-wrapper li{
-  height: 682px;
+  height: 482px;
   overflow: hidden;
   padding: 0;
   cursor: pointer;
@@ -575,9 +573,6 @@ margin: 40px 0 20px 0;
 }
 
 @media (max-width: 768px) {
-  .body {
-    overflow:visible;
-  }
   .header__logo {
     padding-top: 100px;
   }
