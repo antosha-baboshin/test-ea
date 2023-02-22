@@ -384,7 +384,14 @@ margin: 40px 0 20px 0;
   transform: rotate(-180deg);
 }
 .undersection__slide-body-block {
-  display: none;
+  display: flex;
+  width: 0px;
+  overflow: hidden;
+  transition: width 2s ease;
+}
+
+._show {
+  display: flex;
   width: 995px;
 }
 ._slide0 {
@@ -437,7 +444,10 @@ margin: 40px 0 20px 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
+  width: 250px;
   padding-bottom: 12px;
+  padding-right: 20px;
+  overflow: hidden;
 }
 
 .undersection__slide-date {
@@ -458,9 +468,6 @@ margin: 40px 0 20px 0;
   line-height: 120%;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.8);
-}
-._show {
-  display: flex;
 }
 .undersection__slide{
   display: flex;
