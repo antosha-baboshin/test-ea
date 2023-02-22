@@ -249,7 +249,7 @@ html {
   align-items: center;
   width: 100%;
   margin-top: 76px;
-  height: 12%;
+  height: 11%;
   background-color: var(--main-text-color);
 }
 
@@ -335,6 +335,7 @@ html {
   bottom: -100vh;
   height: 100vh;
   width: 100%;
+  padding-top: 50px;
   background: #FFFFFF;
 }
 .undersection__slider-wrapper {
